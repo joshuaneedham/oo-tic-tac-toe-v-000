@@ -28,16 +28,16 @@ end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def position_taken?(board, index)
   #Check for an empty board is equal to " "
-  if board[index] == " "
+  if @board[index] == " "
     return false
   end
-  if board[index] == ""
+  if @board[index] == ""
     return false
   end
-  if board[index] == nil
+  if @board[index] == nil
     return false
   end
-  if board[index] == "X" || board[index] == "O"
+  if @board[index] == "X" || @board[index] == "O"
     return true
   end
 end
@@ -47,7 +47,7 @@ def input_to_index(user_input)
 end
 # Add move to board
 def move(board, index, player_token)
-  board[index] = player_token
+  @board[index] = player_token
 end
 
 def turn(board)
@@ -68,7 +68,7 @@ end
 def turn_count(board)
   moves = 0
   # Checking each position on the board for an entry
-  board.each do |move|
+  @board.each do |move|
     # If not empty increment moves by one
     if move == "X" || move == "O"
       moves += 1
