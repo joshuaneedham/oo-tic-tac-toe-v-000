@@ -23,11 +23,11 @@ class TicTacToe
   end
 
   def input_to_index
-    
+
   end
 
   def move
-    
+
   end
 
   def position_taken?
@@ -44,40 +44,40 @@ class TicTacToe
     return true
   end
   end
-  
+
   def valid_move?
   index.between?(0, 8) && !position_taken?(board, index)
   end
 
   def turn_count
-    
+
   end
 
   def current_player
-    
+
   end
 
   def turn
-    
+
   end
 
   def won
-    
+
   end
 
   def full?
-    
+
   end
 
   def draw?
-    
+
   end
 
   def over?
-    
+
   end
 
   def winner
-    
+
   end
 end
