@@ -31,18 +31,18 @@ class TicTacToe
   end
 
   def position_taken?
-    if board[index] == " "
-    return false
-  end
-  if board[index] == ""
-    return false
-  end
-  if board[index] == nil
-    return false
-  end
-  if board[index] == "X" || board[index] == "O"
-    return true
-  end
+    if @board[index] == " "
+      return false
+    end
+    if @board[index] == ""
+      return false
+    end
+    if @board[index] == nil
+      return false
+    end
+    if @board[index] == "X" || @board[index] == "O"
+      return true
+    end
   end
 
   def valid_move?
