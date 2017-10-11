@@ -21,7 +21,63 @@ class TicTacToe
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
+
+  def input_to_index
+    
+  end
+
+  def move
+    
+  end
+
+  def position_taken?
+    if board[index] == " "
+    return false
+  end
+  if board[index] == ""
+    return false
+  end
+  if board[index] == nil
+    return false
+  end
+  if board[index] == "X" || board[index] == "O"
+    return true
+  end
+  end
+  
   def valid_move?
   index.between?(0, 8) && !position_taken?(board, index)
+  end
+
+  def turn_count
+    
+  end
+
+  def current_player
+    
+  end
+
+  def turn
+    
+  end
+
+  def won
+    
+  end
+
+  def full?
+    
+  end
+
+  def draw?
+    
+  end
+
+  def over?
+    
+  end
+
+  def winner
+    
   end
 end
