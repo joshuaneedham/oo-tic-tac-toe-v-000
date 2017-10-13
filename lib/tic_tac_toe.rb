@@ -105,14 +105,14 @@ class TicTacToe
     full? && !won?
   end
 
-  def over?(board)
-    draw?(board) || won?(board)
+  def over?
+    draw? || won?
   end
 
-  def winner(board)
-    if won?(board)
-       win_index_1 = won?(board)[0]
-       return board[win_index_1]
+  def winner
+    if won?
+       win_index_1 = won?[0]
+       return @board[win_index_1]
     end
   end
 end
