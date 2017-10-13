@@ -55,7 +55,15 @@ class TicTacToe
     end
     #return moves with or without 'return'
     moves
-end
+  end
+  def current_player
+    # if turn_count(board) % 2 == 0
+    #   return "X"
+    # else turn_count(board) % 2 != 0
+    #   return "O"
+    # end
+    turn_count % 2 == 0 ? "X" : "O"
+  end
   def turn
     puts "Please enter 1-9:"
     user_input = gets.strip
